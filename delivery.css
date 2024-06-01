@@ -13,8 +13,8 @@
     font-family: 'Nunito', sans-serif;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
+    font-weight: 500;
+    font-size: 18px;
     line-height: 21px;
     color: var(--cor-fonte);
 }
@@ -86,13 +86,19 @@ html {
     background-color: rgba(0, 0, 0, 0.5); /* Cor escura com transparência */
 }
 
+#topo {
+    width: 90%;
+}
+#navbarNav {
+    width: 30%;
+}
 .container img{
-    width: 80px;
+    width: 60px;
+}
+.container .navbar-brand {
+    font-size: 15px;
 }
 
-/* .navbar {
-    padding: 80px;
-} */
 .navbar-brand a {
     cursor: pointer;
 }
@@ -125,47 +131,66 @@ html {
 
 
 /* //////////////////////////////////////           Tabela de Produtos */
-#produtos {
-    padding: 4rem 0;
-    }
-#produtos h2 {
-    margin-bottom: 2rem;
+
+#produtos h5 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--cor-titulo);
+}
+#produtos p {
+    font-size: 10px;
+    line-height: 1.2;
+}
+#produtos th {
+    font-size: 12px;
 }
 #produtos td img {
     border-radius: 4px;
     width: 60px;
 }
 #produtos a img {
-    width: 30px;
+    width: 40px;
     /* margin-top: 38px; */
 }
 #produtos .price {
     font-weight: bold;
     width: 100px;
     padding: 50px 10px;
+    color: var(--cor-titulo);
 }
 
 
-/* #pizzas {
-    padding: 0;
-    margin-top: 0;
-    } */
+
 #pizzas h2 {
-    margin-top: -30px;
-    margin-bottom: 2rem;
+    /* margin-top: -30px; */
+    /* margin-bottom: 1rem 0; */
+    color: var(--cor-titulo);
+}
+#pizzas h5 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--cor-titulo);
+}
+#pizzas p {
+    font-size: 10px;
+    line-height: 1.2;
+}
+#pizzas th {
+    font-size: 12px;
 }
 #pizzas td img {
     border-radius: 4px;
     width: 60px;
 }
 #pizzas a img {
-    width: 30px;
+    width: 40px;
     /* margin-top: 38px; */
 }
 #pizzas .price {
     font-weight: bold;
     width: 100px;
     padding: 50px 10px;
+    color: var(--cor-titulo);
 }
 
 
@@ -204,13 +229,13 @@ html {
 
 .subtotal-item {
     margin-top: 15px;
-    font-weight: bold ;
+    font-weight: 300;
     color: var(--cor-titulo);
 }
 
 
 .tituloProduto-item {
-    font-weight: bold ;
+    font-weight: 300;
     color: var(--cor-titulo);
 }
 
@@ -280,7 +305,9 @@ html {
 }
         
 
-
+.btn-remover-pedido {
+    font-size: 12px !important;
+}
 
 
 /* //////////////////////////////////////            Modal */
@@ -298,7 +325,6 @@ html {
 
 /* //////////////////////////////////////            Contatos */
 .contatos {
-    background-color: #f8f9fa;
     padding: 2rem 0;
     text-align: center;
     color: var(--cor-fonte);
@@ -319,11 +345,33 @@ html {
 
 
 /* //////////////////////////////////////            Rodapé */
+.overlay {
+    position: fixed;
+    bottom: 0;
+    width: 110%;
+    height: 60px;
+    background-color: #dddddd;
+    z-index: 990;
+}
+
+/* Estilo para o footer */
 footer {
-    background-color: #f8f9fa;
     padding: 1rem;
     text-align: center;
+    margin-bottom: 50px;
 }
+
+footer .menuFlutuante {
+    display: flex;
+    position: fixed;
+    z-index: 996;
+    width: 40px;
+}
+
+
+
+
+
 .container .btnFlutuante {
     width: auto;
     display: flex;
@@ -359,22 +407,22 @@ footer {
 
 .btnFlutuante-menu{
     position: fixed;
-    bottom: 150px;
-    left: 10px;
+    bottom: 10px;
+    left: 20px;
     z-index: 999;
     cursor: pointer;
 }
 .btnFlutuante-info {
     position: fixed;
-    bottom: 100px;
-    left: 10px;
+    bottom: 10px;
+    margin: auto;
     cursor: pointer;
     z-index: 999;
 }
 .btnFlutuante-bolsa {
     position: fixed;
-    bottom: 50px;
-    left: 10px;
+    bottom: 10px;
+    right: 20px;
     cursor: pointer;
     z-index: 999;
 }
@@ -405,9 +453,7 @@ footer {
     font-style: italic;
     color: var(--cor-fonte);
 }
-.rodape {
-    height: 60px;
-}
+
 
 
 /* //////////////////////////////////////            MENU */
@@ -416,15 +462,5 @@ footer {
     cursor: pointer;
     font-size: 1.5rem;
 }
-
-
-
-/* .btnFlutuante-menu {
-    background-color: #fff;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-bottom: 10px;
-} */
-
 
 

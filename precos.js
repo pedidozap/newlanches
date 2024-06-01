@@ -21,9 +21,9 @@ var precos = {
     "Ervilha": 1.00,
     "Pimentão": 1.00,
     // Bebidas
-    "Coca-Cola Lata": 7.00,
+    "Coca-Cola": 7.00,
     "Guaraná": 6.00,
-    "Coca-Cola Garrafa": 15.00,
+    "Coca-Cola 2lt": 15.00,
 };
 
 

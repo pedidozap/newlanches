@@ -1,4 +1,4 @@
-// gerarNumeroPedido.js
+
 
 const NUMERO_PEDIDO_KEY = "numeroPedido";
 const DATA_PEDIDO_KEY = "dataPedido";

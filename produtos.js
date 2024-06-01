@@ -3,21 +3,21 @@
 var listaProdutos = [
     {
         nome: "Hamburguer",
-        descricao: "Pão burger e quentinho, hambúrguer, cebola, Bacon, cheddar e picles com ketchup e mostarda.",
+        descricao: "carne, salada e molho especial.",
         imagem: "./image/burguer_hamburguer.png",
         adicionais: ["Bacon", "Ovo", "Cheddar", "Catupiry", "Molho Especial"],
         modalId: "modal1"
     },
     {
         nome: "X-burguer",
-        descricao: "Pão burger e quentinho, hambúrguer, cebola, Bacon, cheddar e picles com ketchup e mostarda.",
+        descricao: "carne, cebola, bacon, queijo, salada e molho especial.",
         imagem: "./image/burguer_x-burguer.png",
         adicionais: ["Bacon", "Cheddar", "Catupiry", "Molho Especial"],
         modalId: "modal2"
     },
     {
         nome: "X-Tudo",
-        descricao: "Pão burger e quentinho, hambúrguer, cebola, Bacon, cheddar e picles com ketchup e mostarda.",
+        descricao: "duas carnes, cebola, bacon, ovo, queijo, salada e molho especial.",
         imagem: "./image/burguer_x-tudo.png",
         adicionais: [ "Molho Especial"],
         modalId: "modal3"
@@ -27,20 +27,20 @@ var listaProdutos = [
 
 var listaProdutosBebidas = [
     {
-        nome: "Coca-Cola Lata",
-        descricao: "Refrigerante de cola, 350ml.",
+        nome: "Coca-Cola",
+        descricao: "Refrigerante 350ml.",
         imagem: "./image/refri_coca-cola.png",
         modalId: "modal-bebida1"
     },
     {
         nome: "Guaraná",
-        descricao: "Refrigerante de guaraná, 350ml.",
+        descricao: "Refrigerante 350ml.",
         imagem: "./image/refri_guarana.png",
         modalId: "modal-bebida2"
     },
     {
-        nome: "Coca-Cola Garrafa",
-        descricao: "Refrigerante de cola, 2 lts.",
+        nome: "Coca-Cola 2lt",
+        descricao: "Refrigerante 2 litros.",
         imagem: "./image/refri_coca-cola_2lts.png",
         modalId: "modal-bebida3"
     },
