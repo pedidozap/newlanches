@@ -24,45 +24,48 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
-        <div class="container" id="topo2">
-            <div class="container d-flex align-items-center justify-content-between" id="topo">
-                <div class="navbar-brand-container d-flex align-items-center">
-                    <a class="navbar-brand" href="#">Ponto do Delivery</a>
-                </div>
+    <nav class="navbarBase navbar-expand-lg navbar-dark bg-black">
+        <div class="containerBase2" id="topo2">
+            <div class="container-navbar d-flex align-items-center justify-content-between" id="topo">
+
                 <div class="logo-container d-flex justify-content-center">
                     <img src="./image/logoEmpresa.png" alt="Logo da Empresa">
                 </div>
+
+                <div class="navbar-brand-container d-flex align-items-center">
+                    <a class="navbar-brand" href="#">Ponto do Delivery</a>
+                </div>
+                
                 <div class="navbar-toggler-container d-flex align-items-center">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                 </div>
+
             </div>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
-                    </li>
                     <li>
                         <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="modal"
                             data-bs-target="#horariosModal"><i class="fa-regular fa-clock text-white"></i> Horários de
                             Atendimento <i class="fa-solid fa-chevron-down text-white"></i></a>
                     </li>
-
+    
                     <li>
                         <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="modal"
                             data-bs-target="#enderecoModal"><i class="fa-solid fa-location-dot text-white"></i> Endereço
                             <i class="fa-solid fa-chevron-down text-white"></i></a>
                     </li>
-
+    
                 </ul>
-
-
+    
+    
             </div>
         </div>
     </nav>
+
+
 
     <!-- Modal Horário de Atendimento-->
     <div class="modal fade" id="horariosModal" tabindex="-1" aria-labelledby="horariosModalLabel" aria-hidden="true">
@@ -125,7 +128,7 @@
     </div>
 
     <!-- Seção de Lanches -->
-    <div id="produtos">
+    <div id="produtos" class="produtoCard">
         <!-- Seção de Hamburguer -->
         <div id="hamburguer" class="container mt-5">
             <h2>HAMBÚRGUERES</h2>
@@ -149,7 +152,7 @@
             </table>
         </div>
 
-        <br>
+        
         <!-- Seção de bebida -->
         <div id="bebidas" class="container mt-5">
             <h2>BEBIDAS</h2>
@@ -277,7 +280,7 @@
 
     <!-- SEÇÃO DE RODAPÉ -->
     <footer class="rodape text-center">
-        <div class="container">
+        <div class="containerFooter">
             <div class="btnFlutuante">
                 <div class="btnFlutuante-info">
                     <a href="#topo">
@@ -298,9 +301,7 @@
             </div>
             <h4>Desenvolvido por digitalpacheco®</h4>
         </div>
-        <div class="menuFlutuante">
-            <p>teste</p>
-        </div>
+
     </footer>
     <div class="overlay"></div>
 

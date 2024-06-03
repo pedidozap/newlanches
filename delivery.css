@@ -4,12 +4,9 @@
 * {
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
     list-style: none;
     border: none;
     text-decoration: none;
-    /* font-family: 'Source Sans Pro', sans-serif; */
-    /* font-family: 'Playfair Display', sans-serif; */
     font-family: 'Nunito', sans-serif;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-style: normal;
@@ -24,108 +21,133 @@
     --cor-secundaria: #f1f1ef; 
     --cor-destaque: #ffc506; 
     --cor-titulo: #328f16; 
-    --cor-fonte: #555555; 
+    --cor-fonte: #ffffff;
+    --cor-hover: #ffc506;
 }
+
 html {
     scroll-behavior: smooth;
 }
 
-
-/* //////////////////////////////////////            Navbar */
-
-#topo2 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-
-/* Centralizando a logo */
-.logo-container {
-    flex: 2;
+/* Navbar */
+.navbarBase {
     display: flex;
     justify-content: center;
-}
-
-/* Garantindo que o botão do navbar-toggler fique alinhado à direita */
-.navbar-toggler-container {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: row;
-}
-
-/* Garantindo que o navbar-brand fique alinhado à esquerda */
-.navbar-collapse ul{
-    /* flex: 1; */
-    width: 400px;
-    display: flex;
     align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-
-
-.navbar {
-    display: flex;
-    justify-content: center; /* Centraliza os itens horizontalmente */
-    align-items: center; /* Centraliza os itens verticalmente */
+    position: relative;
+    background: linear-gradient(45deg, #333, #000);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: relative;     /* Para que o ::before seja posicionado corretamente */
     background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url('./image/bannerHamburguer.png');
     background-size: cover;  /* Para cobrir todo o espaço da navbar com a imagem */
     background-position: center; /* Para centralizar a imagem */
 }
 
-.navbar::before {
-    content: "";
-    top: 0;
-    left: 0;
+.containerBase2 {
+    display: flex;
+    margin: 0 20px;
+    max-width: 1200px;
     width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Cor escura com transparência */
 }
 
-#topo {
-    width: 90%;
+.container-navbar {
+    width: 100%;
 }
-#navbarNav {
-    width: 30%;
-}
-.container img{
+
+.logo-container img {
     width: 60px;
 }
-.container .navbar-brand {
-    font-size: 15px;
-}
 
-.navbar-brand a {
-    cursor: pointer;
-}
-.container h2 {
-    color: var(--cor-titulo);
+.navbar-brand-container a {
+    color: var(--cor-fonte);
+    font-size: 24px;
     font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 10px;
+    transition: color 0.3s ease;
 }
-.navbar-nav li{
+
+.navbar-brand-container a:hover {
+    color: var(--cor-hover);
+}
+
+.navbar-toggler-container {
+    margin-left: auto;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Estilos para os links do menu */
+.navbar-nav {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+}
+
+.navbar-nav .nav-item {
+    width: 100%;
+    text-align: center;
+
+}
+
+.navbar-nav .nav-link {
+    font-size: 14px;
+    color: var(--cor-fonte);
+    padding: 10px 0;
+    width: 100%;    
+}
+
+.navbar-nav .nav-link:hover {
+    background: var(--cor-hover);
+    color: var(--cor-primaria);
+}
+
+.navbar-collapse ul{
+    flex: 1;
+    width: 500px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    padding-left: 0;
+}
+.navbar-collapse li{
+    flex: 1;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
 }
 
 
-@media (min-width: 990px) {
-    .navbar .collapse {
-        margin-right: 400px;
-    }
 
-    #topo {
-        padding: 0 100px;
+@media (max-width: 990px) {
+    .navbarBase ul{
+        width: 100%;
     }
-    .container .nav-link {
-        padding: 0 100px;
+    .containerBase2{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
     }
+    .container-navbar{   
+        margin: 0;
+    }
+    
 }
-
-
 
 
 
@@ -138,14 +160,15 @@ html {
     color: var(--cor-titulo);
 }
 #produtos p {
-    font-size: 10px;
+    font-size: 14px;
     line-height: 1.2;
 }
 #produtos th {
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: bold;
 }
 #produtos td img {
-    border-radius: 4px;
+    border-radius: 10px;
     width: 60px;
 }
 #produtos a img {
@@ -162,7 +185,7 @@ html {
 
 
 #pizzas h2 {
-    /* margin-top: -30px; */
+    margin-top: 60px;
     /* margin-bottom: 1rem 0; */
     color: var(--cor-titulo);
 }
@@ -172,14 +195,15 @@ html {
     color: var(--cor-titulo);
 }
 #pizzas p {
-    font-size: 10px;
+    font-size: 14px;
     line-height: 1.2;
 }
 #pizzas th {
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: bold;
 }
 #pizzas td img {
-    border-radius: 4px;
+    border-radius:4px;
     width: 60px;
 }
 #pizzas a img {
@@ -217,6 +241,7 @@ html {
 
 .pedido-conteudo {
     flex-grow: 1;
+    width: 90%;
 }
 
 .pedido-botao {
@@ -230,19 +255,24 @@ html {
 .subtotal-item {
     margin-top: 15px;
     font-weight: 300;
+    font-weight: bold;
     color: var(--cor-titulo);
 }
 
 
 .tituloProduto-item {
-    font-weight: 300;
+    font-weight: 400;
     color: var(--cor-titulo);
+}
+.tituloProduto-item {
+    font-weight: bold;
 }
 
 
 
 .endereco {
     margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .subtotal {
@@ -361,25 +391,19 @@ footer {
     margin-bottom: 50px;
 }
 
-footer .menuFlutuante {
-    display: flex;
-    position: fixed;
-    z-index: 996;
-    width: 40px;
-}
 
 
 
 
-
-.container .btnFlutuante {
+/* link's flutuantes */
+.containerFooter .btnFlutuante {
     width: auto;
     display: flex;
     justify-content: space-around;
     color: #fff;
 }
 
-
+/* Modal horário e endereço */
 .modal-content {
     display: flex;
     flex-direction: column;
@@ -404,7 +428,7 @@ footer .menuFlutuante {
 }
 
 
-
+/* botões flutuantes (menu;seta para cima e bolsa de compra) */
 .btnFlutuante-menu{
     position: fixed;
     bottom: 10px;
@@ -428,8 +452,7 @@ footer .menuFlutuante {
 }
 
 
-
-
+/* botões flutuantes (imagens) */
 .btnFlutuante-bolsa a img {
     width: 40px;
 }
@@ -440,27 +463,19 @@ footer .menuFlutuante {
     width: 40px;
 }
 
-
+/* contador de itens (bolsa) */
 .badge {
     z-index: 1000;
     position: absolute;
     top: -5px;
     right: -10px;
 }
-.container h4 {
+
+/* Desenvolvido por */
+.containerFooter h4 {
     margin-top: 10px;
     font-size: 11px;
     font-style: italic;
     color: var(--cor-fonte);
 }
-
-
-
-/* //////////////////////////////////////            MENU */
-
-.nav-icon {
-    cursor: pointer;
-    font-size: 1.5rem;
-}
-
 
