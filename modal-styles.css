@@ -1,5 +1,11 @@
 /* modal-styles.css */
-
+:root {
+    --cor-primaria: #000000; 
+    --cor-secundaria: #f1f1ef; 
+    --cor-destaque: #ffc506; 
+    --cor-titulo: #328f16; 
+    --cor-fonte: #555555; 
+}
 /* Estilo geral para todos os modais */
 .modal-dialog {
     max-width: 500px;
@@ -54,7 +60,8 @@
 .modal-body .col-md-6:first-child img {
     max-width: 40%; /* Define o tamanho máximo da imagem */
     height: auto;
-    border-radius: 5px;
+    border-radius: 15px;
+    margin-bottom: 15px;
 }
 
 /* Consulta de mídia para telas maiores */
@@ -87,4 +94,14 @@
 /* .btn .btn-primary .btn-adicionar-pedido { */
 .btn-adicionar-pedido {
     width: 100%;
+}
+
+
+/* formulários */
+
+.mb-3 .form-label{
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--cor-fonte);
+    
 }

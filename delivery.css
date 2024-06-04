@@ -13,7 +13,8 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
-    color: var(--cor-fonte);
+    /* color: var(--cor-fonte); */
+    color: var(--cor-text);
 }
 
 :root {
@@ -23,10 +24,28 @@
     --cor-titulo: #328f16; 
     --cor-fonte: #ffffff;
     --cor-hover: #ffc506;
+    --cor-text: #3a3a3a;
+
 }
 
 html {
     scroll-behavior: smooth;
+}
+.produtoCard h2 {
+    color: var(--cor-titulo) ;
+    font-weight: bold;
+}
+.container h2 {
+    color: var(--cor-titulo) ;
+    font-weight: bold;
+}
+.produtoCard p {
+    color: var(--cor-text) ;
+    font-style: italic;
+}
+.container p {
+    color: var(--cor-text) ;
+    font-style: italic;
 }
 
 /* Navbar */

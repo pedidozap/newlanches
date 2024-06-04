@@ -58,25 +58,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     window.calcularValores = calcularValores;
 
-    // verificarPedidoBtn.addEventListener("click", function() {
-    //     const entregaSelecionada = document.querySelector('input[name="opcao"]:checked');
-    //     if (!entregaSelecionada) {
-    //         alert("Por favor, selecione o tipo de entrega.");
-    //         return;
-    //     }
-
-    //     if (entregaSelecionada.value === "entrega") {
-    //         const bairroSelect = document.getElementById("bairro");
-    //         if (!bairroSelect || !bairroSelect.value) {
-    //             alert("Por favor, selecione o bairro para entrega.");
-    //             return;
-    //         }
-    //     }
-
-    //     resumoPedidoTxt.classList.remove("hidden");
-    //     calcularValores();
-    //     atualizarContador(); // Atualiza o contador ao verificar o pedido
-    // });
 
     verificarPedidoBtn.addEventListener("click", function() {
         const entregaSelecionada = document.querySelector('input[name="opcao"]:checked');
