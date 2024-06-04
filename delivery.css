@@ -89,9 +89,9 @@ html {
     transition: color 0.3s ease;
 }
 
-.navbar-brand-container a:hover {
+/* .navbar-brand-container a:hover {
     color: var(--cor-hover);
-}
+} */
 
 .navbar-toggler-container {
     margin-left: auto;
@@ -434,12 +434,12 @@ footer {
     margin-right: 10px;
     padding: 5px;
 }
-.modal-body a {
+/* .modal-body a {
     text-decoration: none;
     color: var(--cor-titulo);
     font-weight: bold;
     padding: 10px;
-}
+} */
 .modal-body a:hover {
     transform: scaleX(1.0);
 }
