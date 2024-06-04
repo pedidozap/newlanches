@@ -41,11 +41,11 @@ html {
 }
 .produtoCard p {
     color: var(--cor-text) ;
-    font-style: italic;
+
 }
 .container p {
     color: var(--cor-text) ;
-    font-style: italic;
+
 }
 
 /* Navbar */
