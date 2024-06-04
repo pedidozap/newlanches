@@ -127,13 +127,13 @@ html {
 }
 
 .navbar-nav .nav-link:hover {
-    background: var(--cor-hover);
+    /* background: var(--cor-hover); */
     color: var(--cor-primaria);
 }
 
 .navbar-collapse ul{
-    flex: 1;
-    width: 500px;
+    /* flex: 1; */
+    /* width: 500px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -141,8 +141,8 @@ html {
     padding-left: 0;
 }
 .navbar-collapse li{
-    flex: 1;
-    width: 500px;
+    /* flex: 1; */
+    /* width: 500px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -153,11 +153,9 @@ html {
 
 
 @media (max-width: 990px) {
-    .navbarBase ul{
-        width: 100%;
-    }
+    
     .containerBase2{
-        width: 95%;
+        width: 90%;
         display: flex;
         flex-direction: column;
         text-align: center;
