@@ -171,7 +171,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         console.log("Mensagem final:", mensagem);
-        const linkWhatsApp = `https://api.whatsapp.com/send?phone=5521970129970&text=${encodeURIComponent(mensagem)}`;
+        const linkWhatsApp = `https://api.whatsapp.com/send?phone=5521967594267&text=${encodeURIComponent(mensagem)}`;
         window.open(linkWhatsApp, "_blank");
     }
 
@@ -279,7 +279,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         console.log("Mensagem final:", mensagem);
-        const linkWhatsApp = `https://api.whatsapp.com/send?phone=5521970129970&text=${encodeURIComponent(mensagem)}`;
+        const linkWhatsApp = `https://api.whatsapp.com/send?phone=5521967594267&text=${encodeURIComponent(mensagem)}`;
         window.open(linkWhatsApp, "_blank");
     }
     
@@ -366,7 +366,7 @@ if (numeroMesaElement) {
         }
 
         console.log("Mensagem final:", mensagem);
-        const linkWhatsApp = `https://api.whatsapp.com/send?phone=5521970129970&text=${encodeURIComponent(mensagem)}`;
+        const linkWhatsApp = `https://api.whatsapp.com/send?phone=5521967594267&text=${encodeURIComponent(mensagem)}`;
         window.open(linkWhatsApp, "_blank");
     }
 
